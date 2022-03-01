@@ -1,0 +1,81 @@
+.bodyEdit{
+  width: 100%;
+  height: 1000px;
+  
+  
+}
+.imgCont{
+  display: flex;
+  margin-top: 9vh;
+
+}
+.editAvaBody{
+  display: flex;
+  margin-bottom: 4vh;
+}
+.candidateAva{
+  height: 300px;
+  width: 300px;
+}
+
+.zag{
+  color:white;
+  font-family: Roboto;
+  font-size: 35px;
+}
+
+.editButtons{
+  width: 50%;
+}
+.buttons{
+  display: flex;
+  margin-top: 15vh;
+}
+.btnEdit{
+  background-color: #FDB5EB;
+  border-radius:5px;
+  color: white;
+  height: 12vh;
+  width: 50%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.btnChoose{
+  background-color:white; 
+  border-radius:5px;
+  color: #FDB5EB;
+  height: 12vh;
+  font-size: 30px;
+  width: 50%;
+  cursor: pointer;
+}
+.btnChoosePost{
+  background-color:white; 
+  border-radius:5px;
+  color: #FDB5EB;
+  height: 12vh;
+  font-size: 30px;
+  width: 95%;
+  cursor: pointer;
+  margin-top: 1vh;
+}
+.btnEditPost {
+  background-color: #FDB5EB;
+  border-radius: 5px;
+  color: white;
+  height: 12vh;
+  width: 95%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.inputText{
+  width: 95%;
+  height: 8vh;
+
+}
+.editorPost{
+  background-color:white;
+}
+.editorAva{
+  background-color:white;
+}

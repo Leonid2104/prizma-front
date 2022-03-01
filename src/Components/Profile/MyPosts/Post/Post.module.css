@@ -1,0 +1,115 @@
+.itemZag img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.item {
+  height: 547px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 18px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.itemZag p{
+  margin-top: 25px;
+  margin-bottom: auto;
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 21px;
+}
+.itemZag{
+  padding-top: 5px;
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+.imgBack{
+  width: 584px;
+  height: 317px;
+  margin-top: 36px;
+  margin-left: 34px;
+}
+.likeImg{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.delPost{
+  margin-left: auto;
+  margin-right: 10px;
+  margin-bottom: auto;
+  padding-top: 0;
+  background-color: #FDB5EB;
+  width: 40px;
+  color:white;
+  height: 40px;
+  border-radius: 30%;
+  border: none;
+  cursor: pointer;
+}
+
+.avatar{
+  height: 50px;
+  width: 50px;
+  
+}
+.likeContainer{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 4.5%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+}
+.bodyAlert{
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.075);
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.alertContainer{
+  height: 50%;
+  width: 40%;
+  background-color: azure;
+}
+
+.rectification{
+  text-align: center;
+  font-size: 50px;
+  color: #2E93B4;
+}
+.btnGroup{
+  justify-content: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btnTrue{
+  height: 60px;
+  width: 120px;
+  background: #FDB5EB;
+  border-radius: 8px;
+  color:white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.btnFalse{
+  height: 60px;
+  width: 120px;
+  background: white;
+  border-radius: 8px;
+  color:#FDB5EB;
+  cursor: pointer;
+}

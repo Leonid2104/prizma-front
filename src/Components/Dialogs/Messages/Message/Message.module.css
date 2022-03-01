@@ -1,0 +1,38 @@
+.message {
+  margin-right: auto;
+  margin-left: 10%;
+  width: 20%;
+  font-size: 20px;
+  margin-top: 20px;
+  display: flex;
+  width: 30%;
+  display: flex;
+  min-height: 10vh;
+  color: #dd4cb9;
+  font-size: 17px;
+  background: white;
+  padding: 1% 1% 1% 1%;
+  border-radius: 10px;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.messageCont{
+  display: flex;
+  width: 100%
+}
+
+.myMes{
+  margin-left: auto;
+  margin-right: 10%;
+  width: 30%;
+  display: flex;
+  min-height: 10vh;
+  color: white;
+  font-size: 17px;
+  background: #dd4cb9;
+  padding: 1% 1% 1% 1%;
+  border-radius: 10px;
+}

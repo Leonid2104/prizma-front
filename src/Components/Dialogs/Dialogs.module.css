@@ -1,0 +1,12 @@
+.dialogsWrapper {
+  display: block;
+  min-height: 100vh;
+  border: 2px solid white;
+  grid-template-columns: 3fr 9fr;
+  padding-left: 5%;
+}
+.chatsZag{
+  margin-top: 1vh;
+  color: white;
+  font-size: 50px;
+}

@@ -1,0 +1,84 @@
+.navbarContainer{
+  background: #FEFEFE;
+  
+  position: absolute;
+  width: 22%;
+  
+  max-height: fit-content;
+  left: 18%;
+  top: 25%;
+}
+.selected {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  text-decoration: none;
+  padding-right: 8%;
+  color: #EA9CD6;
+}
+.vertLine{
+  padding-right: 10%;
+  
+}
+.navigateRef{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  text-decoration: none;
+  color: #C4C4C4;
+  padding-right: 8%;
+}
+.lineHorizon{
+  padding-top: 0;
+  width: 90%;
+  height: 5px;
+  padding-left: 5%;
+}
+.navigate{
+  margin-left: 20%;
+  margin-top: 10px;
+}
+
+.input{
+  background: rgba(196, 196, 196, 0.63);
+  width: 90%;
+  margin-left: 4%;
+  height: 40px;
+  color: #EA9CD6;
+  font-size: 20px;
+  border:none;
+}
+
+.text{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  margin-left: 4%;
+  color: #C4C4C4;
+  margin-top: 20px;
+  margin-bottom: 1px;
+}
+.logBtn:hover{
+  background:#C4C4C4;
+  color: #EA9CD6;
+  transition: all 0.1s ease;
+}
+.logBtn{
+  color:white;
+  background:#EA9CD6;
+  border:none;
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-left: 4%;
+  margin-top: 60px;
+  transition: all 500ms ease;
+  margin-bottom:5vh;
+}

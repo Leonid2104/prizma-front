@@ -1,0 +1,33 @@
+.selectedPage{
+  color:tomato;
+}
+.pages{
+  cursor: pointer;
+  background-color: none;
+}
+.bodyUsers{
+  height: 680px;
+  margin-bottom: 200px;
+}
+.preloaderVis {
+  display: block;
+}
+
+.preloaderNonVis {
+  display: none;
+}
+
+.usersNonVis {
+  opacity: 0;
+}
+
+.usersVis {
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+.zagUsers{
+  margin-top: 1vh;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 1vh;
+}

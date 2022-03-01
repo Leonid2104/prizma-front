@@ -1,0 +1,54 @@
+.btnUsUnf{
+  margin-left: auto;
+  width: 80px;
+  border:none;
+  background: #FDB5EB;
+  border-radius: 8px;
+  color:white;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  cursor: pointer;
+  height: 100%;
+}
+.btnUsF{
+  margin-left: auto;
+  width: 80px;
+  border:none;
+
+  background: white;
+  border-radius: 8px;
+  color:#FDB5EB;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  cursor: pointer;
+  height: 100%;
+}
+.containerUs{
+  width: 100%;
+  display: flex;
+  height: 70px;
+  margin-top: 20px;
+  align-items: center;
+}
+.imgUs{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid rgb(236, 162, 215)
+}
+.nameUs{
+  font-size: 20px;
+  font-family: Roboto;
+  color: #fdb5eba1;
+  margin-left: 10px;
+  font-size: 21px;
+}
+.line{
+  width: 100%;
+}

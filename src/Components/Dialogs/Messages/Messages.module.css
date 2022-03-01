@@ -1,0 +1,76 @@
+
+.newMesBtn {
+  
+  width: 120px;
+  height: 40px;
+  color: white;
+  background-color: #dd4cb9;
+  border-radius: 10px;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  margin-left: 2%;
+  width: 26%;
+}
+/*.headChat{
+  position: fixed;
+  border: 2px solid white;
+  left: 28%;
+  height: 10vh;
+  width: 47.8%;
+  top: 100px;
+  background: linear-gradient(195.86deg, #020153 31.95%, #147392 76.94%, #2E93B4 87.04%);
+}*/
+.headChat {
+  display: flex;
+  border: 2px solid white;
+  height: 5vh;
+  background: linear-gradient(195.86deg, #020153 31.95%, #147392 76.94%, #2E93B4 87.04%);
+  align-items: center;
+}
+.mesCont{
+  border: 2px solid white;
+  height: 65vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  
+}
+.abAva{
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.userName{
+  color: white;
+  margin-left: 1%;
+}
+.linkToProfile{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 2%;
+}
+.newMesCont{
+  display: flex;
+  margin-bottom: 7vh;
+  align-items: center;
+  height: 7vh;
+  margin-top: 5px;
+}
+.inputMes{
+  height: 100%;
+  border-radius:5px;
+  width: 78%;
+}
+.absoluteCont{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 15vh;
+  height: 20vh;
+  width: 40%;
+}
