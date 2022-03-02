@@ -15,7 +15,7 @@ const LikesUs = (props) => {
       <h1 className={s.zag}>Activity</h1>
       {(likesArr && likesArr.length) && likesArr.map(item => {
         return(
-          <LikeUs item = {item}/>
+          <LikeUs key = {`like_${item.id}`} item = {item}/>
         )
       })}
     </div>

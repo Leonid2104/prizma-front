@@ -18,7 +18,7 @@ const UsersMemo = (props) => {
           <Pages PagesCount = {PagesCount} onPageChanged = {props.onPageChanged} pages = {pages} currentPage = {props.currentPage}/>
 
           <div>
-            {usersCur.map(u => ( <User unfollowing = {props.unfollowing} followingInProgress = {props.followingInProgress} following = {props.following} item = {u} userFol = {props.userFol}/>))} 
+            {usersCur.map(u => ( <User key = {`user_${u.id}`} unfollowing = {props.unfollowing} followingInProgress = {props.followingInProgress} following = {props.following} item = {u} userFol = {props.userFol}/>))} 
           </div>
         </div>
   )

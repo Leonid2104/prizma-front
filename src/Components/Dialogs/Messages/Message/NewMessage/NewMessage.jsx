@@ -34,7 +34,9 @@ const NewMessage = (props) => {
     ws.addEventListener('message',(mes) =>{
       const message = JSON.parse(mes.data)
       console.log(message)
-      dispatch(addMes(abId,message.text))
+      if(message.userId === abId){
+        dispatch(addMes(abId,message.text))
+      }
     })
   },[])
 

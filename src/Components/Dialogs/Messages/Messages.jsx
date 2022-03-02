@@ -22,7 +22,7 @@ const Messages = (props) => {
   
     
   let messageElements = messages
-  .map(messageItem => <Message message = {messageItem.textMessage} idUs = {messageItem.speakerId} images = {props.images}/>)
+  .map(messageItem => <Message key = {`message_${messageItem.abId}_${messageItem.textMessage}_${messageItem.id && messageItem.id}`} message = {messageItem.textMessage} idUs = {messageItem.speakerId} images = {props.images}/>)
   
   useEffect(() => {
     elem = document.querySelector('#mesContainer')

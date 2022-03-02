@@ -62,7 +62,7 @@ const NewsMemo = (props) => {
         let currId = hashUserId.get(postElement.userId)
         if(users.length != 0){
         return(
-          <div className="">
+          <div key = {`news_${postElement.id}`} className="">
             <UserNews user = {users[currId]} userId = {postElement.userId}/>
             <Post avatar = {users[currId].avatar ? `${process.env.REACT_APP_API_STATIC_URL}/${users[currId].avatar}` : null} postImage = {postElement.linkToPhoto} localPostId = {postElement.oneUserId} postID = {postElement.id} liked = {postElement.liked} message = {postElement.txt} likeCounts = {postElement.likes}/>
             </div>)

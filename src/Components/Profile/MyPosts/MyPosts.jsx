@@ -48,7 +48,7 @@ const MyPosts = (props) => {
         {postsElements && postsElements.map(postElement => {
            
             return(
-            <Post avatar ={isMe ? myAvatar : avatar ?`${process.env.REACT_APP_API_STATIC_URL}/${avatar}`:null} postImage = {postElement.linkToPhoto} localPostId = {postElement.oneUserId} postID = {postElement.id} liked = {postElement.liked} message = {postElement.txt} isMe = {isMe} likeCounts = {postElement.likes}/>
+            <Post key = {`post_${postElement.id}`} avatar ={isMe ? myAvatar : avatar ?`${process.env.REACT_APP_API_STATIC_URL}/${avatar}`:null} postImage = {postElement.linkToPhoto} localPostId = {postElement.oneUserId} postID = {postElement.id} liked = {postElement.liked} message = {postElement.txt} isMe = {isMe} likeCounts = {postElement.likes}/>
             )
           })}
         

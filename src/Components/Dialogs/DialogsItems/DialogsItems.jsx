@@ -13,7 +13,7 @@ const DialogsItems = (props) => {
   
   
 
-  let dialogsElements =  dialogs.map(dialog => <Dialog id = {dialog.userInfo.id} avatar = {dialog.userInfo.avatar} name = {dialog.userInfo.userName? dialog.userInfo.userName : dialog.userInfo.email}/> )
+  let dialogsElements =  dialogs.map(dialog => <Dialog key = {`dialog_${dialog.id}`} id = {dialog.userInfo.id} avatar = {dialog.userInfo.avatar} name = {dialog.userInfo.userName? dialog.userInfo.userName : dialog.userInfo.email}/> )
   return(
     <div>
 
