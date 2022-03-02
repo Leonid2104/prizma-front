@@ -41,7 +41,7 @@ const NewsMemo = (props) => {
     }
   })
 
-  console.log('rer')
+  
   useEffect(()=>{
     if(users.length == 0){
       dispatch(getUsersThunk())

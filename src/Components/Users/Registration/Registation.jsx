@@ -10,7 +10,7 @@ const Registration = (props) => {
   let onSubmit = (formData) =>{
     if(formData.login && formData.password){
     dispatch(registrationProfile(formData.login,formData.password,formData.userName))
-    console.log(formData)
+    
     dispatch(getUsersThunk())
   }
   }

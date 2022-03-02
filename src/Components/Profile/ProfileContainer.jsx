@@ -17,7 +17,7 @@ const ProfileContainer = (props) =>{
   
   const params = useParams()
   
-  console.log('rendProfile')
+
   const [profileState, setProfileState] = useState(profile[params.userId])
   const status = useSelector(state => state.profilePage.status,(l,r) =>{
     if(l != r){

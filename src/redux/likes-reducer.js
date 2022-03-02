@@ -51,7 +51,7 @@ export const getLikes = () =>{
     API.getLikes().then(response => {
       dispatch(setLikes(response.data))
     }).catch(err => {
-      console.log(err)
+      
     })
   }
 }

@@ -41,16 +41,16 @@ export const setUserData = (userId,email) => ({type: SET_USER_DATA, data: {userI
 export const setTrue = (value) => ({type: SET_TRUE, value})
 export const setIsAuth = (value) => ({type: SET_AUTH, value})
 export const getUserData =  (email,password) => {
-  console.log(email)
+  
   return (dispatch)=>{
     loginAPI.loginUser(email,password).then(response=>{
       debugger
-      console.log(response.data.token)
+    
       dispatch(getCock())
       dispatch(setTrue(true))
     }).catch(err =>{
       dispatch(setTrue(false))
-      console.log(err)
+   
       
     }
 

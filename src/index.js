@@ -8,7 +8,7 @@ import "./App.css"
 import {BrowserRouter} from "react-router-dom"
 import { Provider } from 'react-redux';
 import 'typeface-roboto'
-console.log(process.env.REACT_APP_API_URL)
+
 
 
   ReactDOM.render(

@@ -20,7 +20,6 @@ const EditAva= (props) => {
     let canv = editorRef.getImageScaledToCanvas()
       canv.toBlob((b) =>{
         let file = new File([b],`avatar.${b.type.slice(b.type.lastIndexOf('/') + 1,b.type.length)}`)
-        console.log(file)
         dispatch(setCandAvatar(file))
       })
       
@@ -39,7 +38,7 @@ const EditAva= (props) => {
         }
         
       }
-      console.log(e)
+    
     }
   }
   let inpActive = () =>{
@@ -50,7 +49,7 @@ const EditAva= (props) => {
     document.body.classList.add("stopScroll") 
     if(!isMouse){
       setMouse(true)
-      console.log(true,1111)
+      
     }
   }
   let mouseLeave = () => {
@@ -58,7 +57,7 @@ const EditAva= (props) => {
     if(isMouse){
       changePhoto()
       setMouse(false)
-      console.log(false,1111)
+      
     }
   }
 
@@ -75,7 +74,7 @@ const EditAva= (props) => {
  
 
   const addAvatar = () =>{
-    console.log(avaFile)
+   
     dispatch(setAvatar())
     dispatch(updateAvatar(avaUploader))
     dispatch(setUserAvatarTh(avaFile,locId))

@@ -121,7 +121,7 @@ export const getUsersThunk = (currentPage,PageSize) => {
     dispatch(setIsFetching(true));
     API.getUsers().then(response=>{
         dispatch(setIsFetching(false));
-        console.log(response)
+       
         let i = 0
         let users = response.data
         users.map(u => {
@@ -147,7 +147,7 @@ export const unfollowing = (id) => {
   return (dispatch) => {
     API.unfollowAPI(id).then(response=>{
           dispatch(toggleIsFollowingProgress(true,id))
-          console.log(response.data)
+         
           if (response.data === 'Good'){
             dispatch(unfollow(id))}
             dispatch(toggleIsFollowingProgress(false,id))
@@ -165,14 +165,14 @@ export const following = (id) => {
       }}
 export const like  = (localPostId,postId) => (dispatch) => {
   API.like(postId).then(response => {
-    console.log(response)
+  
   }).catch(err =>{
     
   })
 }
 export const delLike  = (localPostId,postId) => (dispatch) => {
   API.delLike(postId).then(response => {
-    console.log(response.data)
+    
     
   }).catch(err =>{
     

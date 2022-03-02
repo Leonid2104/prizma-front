@@ -41,7 +41,7 @@ unfollowAPI(id){
 },
 getProfile(id){
 
-  console.log(id)
+  
   return instance.get(`/users/${id}`)
 },
 /*getCock(){
@@ -109,7 +109,7 @@ getNews(){
   return instance.get('/posts/news/news')
 },
 getProfile(id){
-  console.log(id)
+ 
   return 0
 },
 getStatus(id){

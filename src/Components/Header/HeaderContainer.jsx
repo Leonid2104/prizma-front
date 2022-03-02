@@ -5,12 +5,10 @@ import { setUserData } from "../../redux/auth-reducer";
 import { getCock } from "../../redux/auth-reducer";
 class HeaderContainer extends React.Component{
   componentDidMount(){
-    console.log(this.props.isAuth)
     if (this.props.isAuth){
     this.props.getCock();
   }}
   componentDidUpdate(){
-    console.log(this.props.isAuth)
     if (this.props.isAuth){
     this.props.getCock();
    }

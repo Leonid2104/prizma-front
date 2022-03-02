@@ -198,7 +198,7 @@ export const thunk_addPost = (file,text) => (dispatch) =>{
      dispatch(delLoading())
     }
   }).catch(err =>{
-    console.log(err)
+  
     dispatch(delLoading())
   })}
   
@@ -211,7 +211,7 @@ export const updateStatus = (status) => (dispatch) => {
     dispatch(delLoading())
 
   }).catch(err =>{
-    console.log(err)
+    
     dispatch(delLoading())
   })
 }

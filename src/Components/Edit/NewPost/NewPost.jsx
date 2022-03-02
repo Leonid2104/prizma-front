@@ -27,7 +27,7 @@ const NewPost= (props) => {
         }
         
       }
-      console.log(e)
+      
     }
   }
 
@@ -35,7 +35,7 @@ const NewPost= (props) => {
     let canv = photoRef.getImageScaledToCanvas()
       canv.toBlob((b) =>{
         let file = new File([b],`avatar.${b.type.slice(b.type.lastIndexOf('/') + 1,b.type.length)}`)
-        console.log(file)
+        
         dispatch(addPostImage(file))
       })
       

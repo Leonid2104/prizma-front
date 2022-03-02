@@ -5,7 +5,7 @@ import {WithAuthRedirect} from '../../hoc/WithAuthRedirect'
 import NewPost from "./NewPost/NewPost";
 const EditCont = (props) => {
   const editAva = (formData) =>{
-    console.log(formData)
+   
   }
   return(
     <div className={s.bodyEdit}>
