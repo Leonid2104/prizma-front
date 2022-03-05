@@ -5,6 +5,7 @@
   height: 40px;
   color: white;
   background-color: #dd4cb9;
+  font-size: min(10px,3vw);
   border-radius: 10px;
   height: 100%;
   text-align: center;
@@ -12,15 +13,7 @@
   margin-left: 2%;
   width: 26%;
 }
-/*.headChat{
-  position: fixed;
-  border: 2px solid white;
-  left: 28%;
-  height: 10vh;
-  width: 47.8%;
-  top: 100px;
-  background: linear-gradient(195.86deg, #020153 31.95%, #147392 76.94%, #2E93B4 87.04%);
-}*/
+
 .headChat {
   display: flex;
   border: 2px solid white;
@@ -64,6 +57,7 @@
 .inputMes{
   height: 100%;
   border-radius:5px;
+  font-size: min(14px,3vw);
   width: 78%;
 }
 .absoluteCont{

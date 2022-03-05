@@ -3,23 +3,26 @@
   height: 192px;
 }
 .profInf {
-  height: 400px;
-  margin-bottom: 10px;
+  width: min(400px,12vw);
+  margin-bottom: 20vh;
+}
+.leftCont{
+  width: min(400px, 40vw);
 }
 .ava {
-  width: 300px;
-  height: 300px;
+  width: min(300px,30vw);
+  height: min(300px, 30vw);
   display: flex;
 }
 .avaNon{
-  width: 300px;
-  height: 300px;
+  width: min(300px, 30vw);
+  height: min(300px, 30vw);
   opacity: 0.5;
   display: flex;
 }
 .avaCont {
-  width: 300px;
-  height: 300px;
+  width: min(300px, 30vw);
+  height: min(300px, 30vw);
   margin-top: 14px;
   position: relative;
   z-index: 1;
@@ -29,15 +32,17 @@
 .zagAva {
   display: flex;
   width: 124px;
-  margin-left: 39px;
-  margin-top: 35px;
+  margin-left: max(10px,min(39px,5vw));
+  margin-top: min(35px,4vh);
   font-weight: 500;
-  font-size: 28px;
+  font-size: max(20px,min(28px, 5vw));
   line-height: 33px;
   text-transform: bold;
   
 }
 .ProfZag {
+  width: min(300px, 30vw);
+  height: min(300px, 30vw);
   display: flex;
   color: white;
 }
@@ -50,11 +55,11 @@
 }
 .ProfZ {
   display: block;
-  margin-left: 17px;
+  margin-left: min(17px,3vw);
 }
 .followed{
-  width: 298px;
-  height: 65px;
+  width: min(300px, 30vw);
+  height: min(65px,10vw);
   background: #FDB5EB;
   border-radius: 8px;
   margin-top: 14px;
@@ -62,7 +67,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 21px;
+  font-size: min(21px,3vw);
   cursor: pointer;
   line-height: 25px;
 }

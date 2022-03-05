@@ -29,5 +29,5 @@
 .zagNews{
   margin-top: 1vh;
   color: white;
-  font-size: 50px;
+  font-size: min(50px, 10vw);
 }

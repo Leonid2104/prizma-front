@@ -61,6 +61,12 @@ const EditAva= (props) => {
     }
   }
 
+  const [width,setWidth] = useState(window.screen.width / 5)
+  useEffect(() => {
+    if(Math.abs(window.screen.width - width) > 5){
+      setWidth(window.screen.width / 5)
+    }
+  },[window.screen.width])
   const dispatch = useDispatch()
   const [scale,setScale] = useState(1.2)
   const avaUploader = useSelector(state => state.profilePage.candidateAvatarFile)
@@ -99,9 +105,9 @@ const EditAva= (props) => {
           onMouseLeave = {mouseLeave}
           image ={file}
           onImageReady = {changePhoto}
-          width={300}
-          height={300}
-          border={18}
+          width={width}
+          height={width}
+          border={width/15}
           color={[23, 34, 45, 0.6]} // RGBA
           scale={scale}
           rotate={0}/>

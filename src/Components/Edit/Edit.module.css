@@ -13,10 +13,7 @@
   display: flex;
   margin-bottom: 4vh;
 }
-.candidateAva{
-  height: 300px;
-  width: 300px;
-}
+
 
 .zag{
   color:white;
@@ -25,7 +22,7 @@
 }
 
 .editButtons{
-  width: 50%;
+  width: 32vw;
 }
 .buttons{
   display: flex;
@@ -35,27 +32,35 @@
   background-color: #FDB5EB;
   border-radius:5px;
   color: white;
-  height: 12vh;
-  width: 50%;
-  font-size: 30px;
+  height: 6vw;
+  width: 13vw;
+  min-width: 100px;
+  min-height: 40px;
+  font-size: max(13px, min(30px, 2vw));
   cursor: pointer;
 }
 .btnChoose{
   background-color:white; 
   border-radius:5px;
   color: #FDB5EB;
-  height: 12vh;
-  font-size: 30px;
-  width: 50%;
+  font-size: max(13px, min(30px, 2vw));
+  height: 6vw;
+  width: 13vw;
+  min-width: 100px;
+  min-height: 40px;
   cursor: pointer;
 }
 .btnChoosePost{
   background-color:white; 
   border-radius:5px;
   color: #FDB5EB;
-  height: 12vh;
-  font-size: 30px;
-  width: 95%;
+ 
+  
+  height: 6vw;
+  width: 13vw;
+  min-width: 100px;
+  min-height: 40px;
+  font-size: max(13px, min(30px, 2vw));
   cursor: pointer;
   margin-top: 1vh;
 }
@@ -63,14 +68,19 @@
   background-color: #FDB5EB;
   border-radius: 5px;
   color: white;
-  height: 12vh;
-  width: 95%;
-  font-size: 30px;
+  height: 6vw;
+  width: 13vw;
+  min-width: 100px;
+  min-height: 40px;
+  font-size: max(13px,min(30px, 2vw));
   cursor: pointer;
 }
 .inputText{
-  width: 95%;
-  height: 8vh;
+  height: 6vw;
+  width: 13vw;
+  min-width: 100px;
+  min-height: 40px;
+  font-size: min(30px, 4vw);
 
 }
 .editorPost{
@@ -78,4 +88,5 @@
 }
 .editorAva{
   background-color:white;
+  margin-left: 3vw;
 }

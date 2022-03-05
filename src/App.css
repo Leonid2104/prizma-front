@@ -1,8 +1,14 @@
 .appWrapperContent {
-  margin-top: 109px;
-  width: 48%;
-
-  margin-left: 28%;
+  margin-top: 18vh;
+  width: 48vw;
+  margin-left: 28vw;
+}
+@media (max-width:700px) {
+  .appWrapperContent{
+    margin-top: 18vh;
+    width: 70vw;
+    margin-left: 15vw;
+  }
 }
 .app-wrapper {
   display: flex;

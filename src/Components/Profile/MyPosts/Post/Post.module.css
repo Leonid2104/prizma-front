@@ -7,7 +7,7 @@
   margin-bottom: 10px;
 }
 .item {
-  height: 547px;
+  height: max(45vw,450px);
   width: 100%;
   background-color: white;
   margin-bottom: 18px;
@@ -15,9 +15,8 @@
 }
 .itemZag p{
   margin-top: 25px;
-  margin-bottom: auto;
   margin-left: 10px;
-  font-size: 18px;
+  font-size: max(10px,min(18px,2vw));
   line-height: 21px;
 }
 .itemZag{
@@ -25,31 +24,36 @@
   display: flex;
   border-bottom: 1px solid #000;
 }
+
 .imgBack{
-  width: 584px;
-  height: 317px;
+  width: 40vw;
+  height: calc(40vw * 0.7);
   margin-top: 36px;
-  margin-left: 34px;
+  margin-left: 4.5%;
 }
-.likeImg{
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  cursor: pointer;
-}
-.delPost{
+
+.delPost {
   margin-left: auto;
   margin-right: 10px;
   margin-bottom: auto;
   padding-top: 0;
   background-color: #FDB5EB;
   width: 40px;
-  color:white;
+  color: white;
   height: 40px;
   border-radius: 30%;
   border: none;
   cursor: pointer;
 }
+
+
+.likeImg{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
 
 .avatar{
   height: 50px;
@@ -112,4 +116,59 @@
   border-radius: 8px;
   color:#FDB5EB;
   cursor: pointer;
+}
+@media (max-width:700px) {
+  .imgBack {
+    width: 50vw;
+    height: calc(50vw * 0.7);
+    min-width: 190px;
+    min-height: calc(190px* 0.7);
+    margin-top: 18px;
+    margin-left: 8%;
+  }
+
+  .item {
+    height: max(250px, 60vw);
+    width: 100%;
+    background-color: white;
+    margin-bottom: 18px;
+    
+  }
+
+  .delPost {
+    height: 30px;
+    width: 30px;
+  }
+
+  .itemZag img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .itemZag p {
+    margin-top: 7px;
+    margin-left: 10px;
+    font-size: max(10px, min(18px, 2vw));
+    line-height: 21px;
+  }
+
+  .likeContainer {
+    font-size: 14px;
+  }
+  .likeImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .likeSvg{
+    width: 15px;
+    height: 15px;
+  }
 }

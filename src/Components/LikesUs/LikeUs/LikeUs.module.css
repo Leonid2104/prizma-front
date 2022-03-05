@@ -40,31 +40,34 @@
 }
 
 .imgUs {
-  height: 70px;
-  width: 70px;
+  height: min(70px,8vw);
+  width: min(70px, 8vw);
+  min-height: 35px;
+  min-width: 35px;
   border-radius: 50%;
   border: 2px solid rgb(236, 162, 215)
 }
 
 .nameUs {
-  font-size: 20px;
+  font-size: max(14px,min(20px,3vw));
   font-family: Roboto;
   color: #fdb5eba1;
   margin-left: 10px;
-  font-size: 21px;
 }
 
 .line {
   width: 100%;
 }
 .postImage{
-  height: 50px;
+  height: min(49px,7vw);
   max-width: 70px;
+  width: min(70px,10vw);
   margin-left: auto;
   
 }
 .textPost{
   color:white;
+  margin-left: auto;
 }
 .postInfo{
   display: flex;
@@ -76,5 +79,13 @@
 .zag{
   margin-top: 1vh;
   color: white;
-  font-size: 50px;
+  font-size: min(50px, 10vw);
+}
+@media (max-width:1200px) {
+  .btnUsF{
+    display: none;
+  }
+  .btnUsUnf{
+    display: none;
+  }
 }

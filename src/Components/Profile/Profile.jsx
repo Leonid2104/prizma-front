@@ -17,7 +17,7 @@ const ProfileMemo = (props) => {
   return(
     <div className="">
       {profile && <div className=''>
-          <ProfileInfo status ={props.status} updateStatus = {props.updateStatus} profile = {props.profile} userId = {params}/>
+          <ProfileInfo className ={s.profileZag} status ={props.status} updateStatus = {props.updateStatus} profile = {props.profile} userId = {params}/>
           <MyPosts profile = {props.profile} id = {props.profile.id}/>
         </div>
       }

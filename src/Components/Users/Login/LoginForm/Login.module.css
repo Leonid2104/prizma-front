@@ -3,15 +3,16 @@
   
   position: absolute;
   width: 22%;
-  
-  max-height: fit-content;
-  left: 18%;
+ 
+  min-width: 250px;
+  height: fit-content;
+  left: 15%;
   top: 25%;
 }
 .selected {
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: min(25px,max(2vw,20px));
   line-height: 29px;
   text-decoration: none;
   padding-right: 8%;
@@ -24,7 +25,8 @@
 .navigateRef{
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: min(25px, max(2vw, 20px));
+  
   line-height: 29px;
   text-decoration: none;
   color: #C4C4C4;
@@ -78,7 +80,7 @@
   font-size: 20px;
   line-height: 23px;
   margin-left: 4%;
-  margin-top: 60px;
+  margin-top: min(4vh,60px);
   transition: all 500ms ease;
   margin-bottom:5vh;
 }

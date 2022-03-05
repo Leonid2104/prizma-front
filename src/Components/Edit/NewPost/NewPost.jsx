@@ -71,7 +71,12 @@ const NewPost= (props) => {
       changePhoto()
     }
   }
-  
+  const [width,setWidth] = useState(window.screen.width / 3)
+  useEffect(() => {
+    if(Math.abs(window.screen.width - width) > 5){
+      setWidth(window.screen.width / 3)
+    }
+  },[window.screen.width])
   
   
   return(
@@ -94,9 +99,9 @@ const NewPost= (props) => {
           onMouseLeave = {leaveMouse}
           onWheel = {changeScale}
           crossOrigin="anonymus"
-          width = {583 * 0.8}
-          height = {317 * 0.8}
-          border={18}
+          width = {width}
+          height = {width * 0.7}
+          border={width / 15}
           color={[23, 34, 45, 0.6]} // RGBA
           scale={scale}
           rotate={0}

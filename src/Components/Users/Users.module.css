@@ -1,6 +1,4 @@
-.selectedPage{
-  color:tomato;
-}
+
 .pages{
   cursor: pointer;
   background-color: none;
@@ -28,6 +26,6 @@
 .zagUsers{
   margin-top: 1vh;
   color: white;
-  font-size: 50px;
+  font-size: min(50px, 10vw);
   margin-bottom: 1vh;
 }

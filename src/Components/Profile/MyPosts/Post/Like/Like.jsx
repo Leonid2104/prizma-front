@@ -25,7 +25,7 @@ const Like = (props) => {
   }
   return(
     <div onClick={click} className = {s.likeImg}>
-      {!liked ?<img src={likeSvg} alt="" />: <img src={likeActiveSvg} alt="" />}
+      {!liked ?<img className={s.likeSvg} src={likeSvg} alt="" />: <img className={s.likeSvg} src={likeActiveSvg} alt="" />}
     </div>
   )
 }

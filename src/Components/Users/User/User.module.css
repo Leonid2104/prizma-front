@@ -1,33 +1,37 @@
 .btnUsUnf{
   margin-left: auto;
-  width: 80px;
+  width: min(80px,8vw);
+  min-width: 55px;
   border:none;
+  min-height: 48px;
   background: #FDB5EB;
   border-radius: 8px;
   color:white;
-  font-size: 18px;
+  font-size: max(13px, min(18px, 2vw));
   line-height: 25px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   cursor: pointer;
-  height: 100%;
+  height: min(70px, 7vw);
 }
 .btnUsF{
   margin-left: auto;
-  width: 80px;
+  width: min(80px, 8vw);
+  height: min(70px, 7vw);
+  min-height: 48px;
   border:none;
-
+  min-width: 55px;
   background: white;
   border-radius: 8px;
   color:#FDB5EB;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: max(13px,min(18px, 2vw));
   line-height: 25px;
   cursor: pointer;
-  height: 100%;
+  
 }
 .containerUs{
   width: 100%;
@@ -37,17 +41,18 @@
   align-items: center;
 }
 .imgUs{
-  height: 70px;
-  width: 70px;
+  height: min(70px,10vw);
+  width: min(70px, 10vw);
+  min-width: 45px;
+  min-height: 45px;
   border-radius: 50%;
   border: 2px solid rgb(236, 162, 215)
 }
 .nameUs{
-  font-size: 20px;
+  font-size: max(13px,min(20px,4vw));
   font-family: Roboto;
   color: #fdb5eba1;
   margin-left: 10px;
-  font-size: 21px;
 }
 .line{
   width: 100%;

@@ -8,7 +8,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 19px;
+  font-size: min(19px,4vw);
   line-height: 22px;
   text-decoration: none;
   color: #FFFFFF;
@@ -18,11 +18,12 @@
   color: tomato;
 }
 .dialogImg{
-  width: 50px;
-  height: 50px;
+  width: min(50px,10vw);
+  height: min(50px, 10vw);
   border-radius: 50%;
 }
 .icon{
   margin-left: auto;
   margin-right: 5%;
+  width: min(40px,8vw);
 }

@@ -1,11 +1,11 @@
 .selectedPage {
   color: rgb(236, 162, 215);
-  font-size: 20px;
+  font-size: min(20px, 4vw);
 }
 
 .pages {
   cursor: pointer;
   background-color: none;
   color:white;
-  font-size: 20px;
+  font-size: min(20px, 4vw);
 }

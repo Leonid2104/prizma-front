@@ -32,7 +32,7 @@ const myId = id.get(props.id)*/}
             <NavLink to = {`/edit`}><img src={edit} className={s.link} alt="" /></NavLink>
             <NavLink to = {'/likes'}><img src={heart} className={s.link} alt="" /></NavLink>
             <NavLink to = {'/dialogs'}><img src={chats} className={s.link} alt="" /></NavLink>
-            <NavLink to = {`/profile/${globId}`}><img src={myAva ? myAva :'https://avatars.mds.yandex.net/i?id=d3cb29c602fae2c730cedae5cbf21465-4569008-images-thumbs&n=13'} className={s.myAva}  alt="" /></NavLink>
+            <NavLink className={s.navToAva} to = {`/profile/${globId}`}><img src={myAva ? myAva :'https://avatars.mds.yandex.net/i?id=d3cb29c602fae2c730cedae5cbf21465-4569008-images-thumbs&n=13'} className={s.myAva}  alt="" /></NavLink>
           </div>
         </div>
         <img src = {line} className={s.lineHead} alt="" />

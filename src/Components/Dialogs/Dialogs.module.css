@@ -4,9 +4,10 @@
   border: 2px solid white;
   grid-template-columns: 3fr 9fr;
   padding-left: 5%;
+  margin-top: 2vh;
 }
 .chatsZag{
   margin-top: 1vh;
   color: white;
-  font-size: 50px;
+  font-size: min(50px,10vw);
 }

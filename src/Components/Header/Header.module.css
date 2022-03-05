@@ -12,7 +12,7 @@
 
 .link {
   height: 33px;
-  width: 33px;
+  width: min(33px,6vw);
   margin-right: 10px;
 }
 
@@ -26,8 +26,9 @@
 }
 .header {
   align-items: center;
-  width: 100%;
-  height: 100px;
+  width: 100vw;
+  height: max(18vh, 60px);
+  max-height: 130px;
   position: fixed;
   background: linear-gradient(195.86deg, #020153 31.95%, #147392 76.94%, #2E93B4 87.04%);
   z-index: 2;
@@ -39,25 +40,28 @@
 }
 .lineHead{
   position: absolute;
-  top: 100px;
+  top: min(130px, max(18vh, 60px));
+  
+
 }
 .logo{
   font-family: Roboto;
   position: absolute;
-  left: 12%;
+  left: 10%;
   background: #FDB5EB;
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: min(28px,8vh,5vw);
   line-height: 33px;
-  top: 20%;
+  top: max(20%,30px);
   color: #FFFFFF;
   display: flex;
   align-items: center;
   letter-spacing: 3px;
   padding-left: 4px;
-  height: 60px;
-  width: 55px;
+  height: min(60px,14vw,10vh);
+  min-height: 20px;
+  width: min(55px,12vw,12vh);
 }
 .loginBlock{
   display: flex;
@@ -74,7 +78,13 @@
 }
 .myAva{
   border-radius: 50%;
-  height: 33px;
-  width: 33px;
+  height: min(33px, 6vw);
+  width: min(33px, 6vw);
   margin-right: 10px;
+}
+.navToAva{
+  height: 33px;
+  display: flex;
+  align-items: center;
+
 }
