@@ -9,10 +9,13 @@ const NewMessage = (props) => {
   const abId = useParams().id
   const myId = useSelector(state => state.auth.userId)
   const dispatch = useDispatch()
-  const ws = new WebSocket(`ws://45.141.79.208:8000/${abId}`)
 
   const [focus, setFocus] = useState(false)
+
+  let getMessageElement = React.createRef();
   let rootEl =useRef(null)
+
+  const ws = new WebSocket(`ws://45.141.79.208:8000/${abId}`)
   useEffect(() => {
     const onClick = e => {
       if(!rootEl.current){
@@ -29,8 +32,8 @@ const NewMessage = (props) => {
       document.addEventListener('click', onClick);
       return () => document.removeEventListener('click', onClick);
   },[])
-  useEffect(() =>{
 
+  useEffect(() =>{
     ws.addEventListener('message',(mes) =>{
       const message = JSON.parse(mes.data)
       if(message.userId === abId){
@@ -40,7 +43,7 @@ const NewMessage = (props) => {
   },[])
 
   
-  let getMessageElement = React.createRef();
+  
   let onAddMes =  ()=> {
     let text = getMessageElement.current.value;
     if(focus){
@@ -55,7 +58,6 @@ const NewMessage = (props) => {
   let  onAddTextMes = () =>{
     let text = getMessageElement.current.value;
     dispatch(addTextMes(text))
-   
   }
   return(
     <div ref = {rootEl} className = {focus ? s.absoluteCont : s.newMesCont}>

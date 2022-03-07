@@ -35,7 +35,6 @@ const App = (props) => {
   if(isLog === null){
     return <Preloader/>
   }
-
   if (isLog === false) {return(
     <div className = "loginCont">
       <img className='img1' src = {backgroundImage1}/>

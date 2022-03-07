@@ -6,10 +6,13 @@ import s from "./Dialogs.module.css"
 import DialogsItems from "./DialogsItems/DialogsItems.jsx"
 import Messages from "./Messages/Messages"
 const Dialogs = (props) => {
+
   const dispatch = useDispatch()
+
   useEffect(()=>{
     dispatch(getChats())
   },[])
+  
   return(
     <div className={s.dialogsWrapper}>
       <h1 className= {s.chatsZag}>Chats</h1>

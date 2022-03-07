@@ -7,11 +7,15 @@ import likeSvg from '../images/like.svg'
 import likeActiveSvg from '../images/likeActive.svg'
 import s from "../Post.module.css"
 const Like = (props) => {
+  
   const dispatch = useDispatch()
+
   const [liked,setLiked] = useState(props.liked)
+
   useEffect(() =>{
     setLiked(props.liked)
   },[props.liked])
+
   let click = () => {
     if(!liked){
       dispatch(like(props.localPostId,props.postId))
@@ -21,7 +25,6 @@ const Like = (props) => {
       props.setLikeCounts(false)
     }
     setLiked(!liked)
-    
   }
   return(
     <div onClick={click} className = {s.likeImg}>

@@ -15,13 +15,14 @@ import { useState } from "react";
 import { getMyAvatar } from "../../redux/profilePage-Reducer";
 const Header = (props) => {
   const dispatch = useDispatch()
+
   const globId = useSelector(state => state.auth.userId)
   const myAva = useSelector(state => state.profilePage.myAvatar)
+
   useEffect(() => {
     dispatch(getMyAvatar(globId))
   },[])
-{ /* const id = useSelector(state => state.usersPage.hashUserId)
-const myId = id.get(props.id)*/}
+
   return (
       <header className = {s.header}>
         <div className= {s.headerFlex}>

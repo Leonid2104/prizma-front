@@ -24,13 +24,17 @@ const LoginForm = (props) => {
 
 
   let [err,removeErr] = useState(true)
+  
   const navigate = useNavigate()
+
   useEffect(()=>{
     if (isAuth){
       navigate(`../profile/${uId}`,{replace:true})
     }
   },[isAuth])
+
   useEffect(() => {
+
   removeErr(err => {
     let pr = !err.pr
     return{

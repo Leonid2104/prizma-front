@@ -33,16 +33,10 @@ const Messages = (props) => {
    
   },[messages,elem,messageElements])
   
-  
   useEffect(() => {
     dispatch(getMessages(myId,abId))
   },[])
 
- 
-  
-  
-  
-  
   return(
     <div className = {s.content}>
       <HeaderMes/>

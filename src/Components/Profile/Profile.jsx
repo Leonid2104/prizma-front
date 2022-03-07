@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
-import FriendsProfile from "./FriendsProfile/FriendsProfile";
 import MyPosts from "./MyPosts/MyPosts";
 import s from "./Profile.module.css";
 import ProfileInfo from "./ProfileInfo/ProfileInfo.jsx";
 import { useParams } from "react-router-dom";
 
 const ProfileMemo = (props) => {
+
   const params = useParams().userId
+
   const [profile,setProfile] = useState(false)
+  const [vis,setVis] = useState(props.view)
+
   useEffect(() => {
     if(props.profile){
       setProfile(true)}
   },[props.profile])
-  const [vis,setVis] = useState(props.view)
+  
   
   return(
     <div className="">

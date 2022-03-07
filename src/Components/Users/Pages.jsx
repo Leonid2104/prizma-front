@@ -3,7 +3,6 @@ import s from "./Pages.module.css"
 
 const Pages = (props) => {
  
-  
   return(
     <div className="">
       {props.currentPage != 1 ?<span  onClick = {()=>{props.onPageChanged(props.currentPage-1);}}className = {s.pages}>{'<'}</span>: null}

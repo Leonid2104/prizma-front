@@ -6,10 +6,13 @@ import s from './LikeUs/LikeUs.module.css'
 
 const LikesUs = (props) => {
   const dispatch = useDispatch()
+
   const likesArr = useSelector(state => state.likesPage.likes)
+
   useEffect(() => {
     dispatch(getLikes())
   },[])
+  
   return(
     <div className=''>
       <h1 className={s.zag}>Activity</h1>

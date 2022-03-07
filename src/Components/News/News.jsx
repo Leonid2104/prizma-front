@@ -13,7 +13,9 @@ import Preloader from "../common/Preloader/Preloader"
 import s from './UserNews/News.module.css'
 const NewsMemo = (props) => {
   const params = useParams()
+
   const dispatch = useDispatch()
+
   const fetchUser = useSelector(state => state.usersPage.isFetching)
   const fetch = useSelector(state => state.news.isFetching,(prevIt,it) =>{
     if(prevIt != it){
@@ -48,7 +50,6 @@ const NewsMemo = (props) => {
     }
     dispatch(getNews())
   },[])
-  
   
   
   return(

@@ -7,13 +7,14 @@ import s from '../Login/LoginForm/Login.module.css'
 
 const Registration = (props) => {
   const dispatch = useDispatch()
+
   let onSubmit = (formData) =>{
     if(formData.login && formData.password){
-    dispatch(registrationProfile(formData.login,formData.password,formData.userName))
-    
-    dispatch(getUsersThunk())
+      dispatch(registrationProfile(formData.login,formData.password,formData.userName))
+      dispatch(getUsersThunk())
+    }
   }
-  }
+
   return(
     <div className={s.navbarContainer}>
       <RegistrationForm onSubmit = {onSubmit}/>

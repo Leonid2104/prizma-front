@@ -8,6 +8,7 @@ class HeaderContainer extends React.Component{
     if (this.props.isAuth){
     this.props.getCock();
   }}
+  
   componentDidUpdate(){
     if (this.props.isAuth){
     this.props.getCock();

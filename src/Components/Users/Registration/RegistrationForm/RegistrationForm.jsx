@@ -15,29 +15,32 @@ const RegForm = (props) => {
   const id = useSelector(state => state.auth.userId)
   const isAuth = useSelector(state => state.auth.isAuth)
   const users = useSelector(state => state.usersPage.users)
+
   let uId
+
   users.map(u => {
     if(u.id === id){
       uId = u.uId
     }
   })
 
-
   let [err,removeErr] = useState(true)
+
   const navigate = useNavigate()
+
   useEffect(()=>{
-    
     if (isAuth){
       navigate(`../users`,{replace:true})
     }
   },[isAuth])
+
   useEffect(() => {
-  removeErr(err => {
-    let pr = !err.pr
-    return{
-      pr:pr
-    }
-  }) 
+    removeErr(err => {
+      let pr = !err.pr
+      return{
+        pr:pr
+      }
+    }) 
   }, [state]);
   return(
     <form onSubmit = {props.handleSubmit}>

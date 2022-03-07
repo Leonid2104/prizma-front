@@ -10,10 +10,12 @@ import { delPost, delPostActionCreater } from "../../../../redux/profilePage-Red
 import Alert from "./Alert/Alert";
 const PostMemo = (props) =>{
   const dispatch = useDispatch()
+
   const dPost =() =>{
     dispatch(delPost(props.postID))
   }
-  let [likeCounts, setLikeCounts] = useState(props.likeCounts)
+
+  const [likeCounts, setLikeCounts] = useState(props.likeCounts)
   const [isAlert, setAlert] = useState(false)
 
   const changeAlert = () => {
@@ -25,6 +27,7 @@ const PostMemo = (props) =>{
       setAlert(true)
     }
   }
+
   const changeLike = (bool) => {
     if(bool){
       setLikeCounts((prev) => prev + 1 )
@@ -32,6 +35,7 @@ const PostMemo = (props) =>{
       setLikeCounts((prev) => prev - 1 )
     }
   }
+
   useEffect(() => {
     setLikeCounts(props.likeCounts)
   },[props.likeCounts])
@@ -45,12 +49,10 @@ const PostMemo = (props) =>{
       <img src={props.postImage ? `${process.env.REACT_APP_API_STATIC_URL}/posts/${props.postImage}` : back } className ={s.imgBack} alt="" />
       <div>
         <div className="">
-        
-        <span className= {s.likeContainer}>
-          <Like setLikeCounts = {changeLike}  localPostId = {props.localPostId} postId = {props.postID} liked = {props.liked}/>
-          {likeCounts} likes
-        </span>
-       
+          <span className= {s.likeContainer}>
+            <Like setLikeCounts = {changeLike}  localPostId = {props.localPostId} postId = {props.postID} liked = {props.liked}/>
+            {likeCounts} likes
+          </span>
         </div>
       </div>
       {isAlert === true && <Alert delPost = {dPost} changeAlert = {changeAlert} />}

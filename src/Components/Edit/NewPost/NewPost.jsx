@@ -8,11 +8,14 @@ import { addPostImage, addPostText,setCandAvatar, thunk_addPost} from "../../../
 import AvatarEditor from "react-avatar-editor";
 
 const NewPost= (props) => {
-  const [stateImage, setImageLoc] = useState(null)
+ 
+
   let photoRef = null
   const setPhotoRef = (ref) => {photoRef = ref}
+
   let inputRef = null
   const setInputRef = (ref) => {inputRef = ref}
+
   function changeScale(e){
     if(isMouse){
       if(e.deltaY < 0){
@@ -25,9 +28,7 @@ const NewPost= (props) => {
         if(!(sc <= 0.6)){
           setScale(sc - 0.1)
         }
-        
-      }
-      
+       }
     }
   }
 
@@ -41,10 +42,15 @@ const NewPost= (props) => {
       
   }
   const dispatch = useDispatch()
+
   const inputTxt = useSelector(state => state.profilePage.inputText)
   const postImage = useSelector(state => state.profilePage.candidatePostImage)
-  
+
+  const [width,setWidth] = useState(window.screen.width / 3)
+  const [isMouse,setMouse] = useState(false)
   const [scale, setScale] = useState(1.2)
+  const [stateImage, setImageLoc] = useState(null)
+
   const addNewPost = () =>{
     dispatch(thunk_addPost(postImage,inputTxt))
   }
@@ -54,7 +60,7 @@ const NewPost= (props) => {
   const onChangeText = (data,text) =>{
     dispatch(addPostText(data.target.value))
   }
-  let [isMouse,setMouse] = useState(false)
+  
   const mouseOver = () =>{
     document.body.classList.add("stopScroll") 
     if(!isMouse){
@@ -71,7 +77,7 @@ const NewPost= (props) => {
       changePhoto()
     }
   }
-  const [width,setWidth] = useState(window.screen.width / 3)
+  
   useEffect(() => {
     if(Math.abs(window.screen.width - width) > 5){
       setWidth(window.screen.width / 3)

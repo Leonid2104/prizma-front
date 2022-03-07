@@ -8,7 +8,9 @@ import LoginReduxForm from "./LoginForm/LoginForm";
 import s from './LoginForm/Login.module.css'
 
 const Login = (props) => {
+
   const navigate = useNavigate()
+  
   const dispatch = useDispatch()
   
   useEffect(()=>{
@@ -16,8 +18,8 @@ const Login = (props) => {
   },[])
 
   const onSubmit = (formData) => {
-  dispatch(getUserData(formData.login,formData.password))
-}
+    dispatch(getUserData(formData.login,formData.password))
+  }
   return(
     <div className={s.navbarContainer}>
       <LoginReduxForm onSubmit = {onSubmit}/>

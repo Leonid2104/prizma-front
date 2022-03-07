@@ -7,10 +7,12 @@ import s from './News.module.css'
 
 const UserNewsMemo = (props) =>{
   const navigate = useNavigate()
+  const user = useMemo(() => props.user,[props.user])
+  
   const goToProfile = () => {
     navigate(`../profile/${props.user.id}`) 
   }
-  const user = useMemo(() => props.user,[props.user])
+  
   return(
     <div onClick ={goToProfile} className={s.userNameCont}>
       {user ? (user.userName ? user.userName: user.email ): <Preloader/>}

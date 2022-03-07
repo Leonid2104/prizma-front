@@ -15,6 +15,7 @@ const EditAva= (props) => {
 
   const setInputRef = (input) => {inputRef = input}
   const setEditorRef = (editor) => (editorRef = editor)
+  
   const changePhoto = () => {
 
     let canv = editorRef.getImageScaledToCanvas()
@@ -36,11 +37,10 @@ const EditAva= (props) => {
         if(!(sc <= 0.6)){
           setScale(sc - 0.1)
         }
-        
       }
-    
     }
   }
+
   let inpActive = () =>{
     inputRef.click()
   }
@@ -62,25 +62,28 @@ const EditAva= (props) => {
   }
 
   const [width,setWidth] = useState(window.screen.width / 5)
+
+  const dispatch = useDispatch()
+
+  const avaUploader = useSelector(state => state.profilePage.candidateAvatarFile)
+  const avaFile = useSelector(state => state.profilePage.candidateAvatar)
+  const id = useSelector(state => state.auth.userId)
+  const locId =  useSelector(state => state.usersPage.hashUserId.get(id))
+
+  const [scale,setScale] = useState(1.2)
+  const [file, setFile] = useState(null)
+ 
+  const onChange = (data) =>{
+    setFile(data.target.files[0])
+  }
+ 
   useEffect(() => {
     if(Math.abs(window.screen.width - width) > 5){
       setWidth(window.screen.width / 5)
     }
   },[window.screen.width])
-  const dispatch = useDispatch()
-  const [scale,setScale] = useState(1.2)
-  const avaUploader = useSelector(state => state.profilePage.candidateAvatarFile)
-  const avaFile = useSelector(state => state.profilePage.candidateAvatar)
-  const [file, setFile] = useState(null)
-  const id = useSelector(state => state.auth.userId)
-  const locId =  useSelector(state => state.usersPage.hashUserId.get(id))
-  const onChange = (data) =>{
-    setFile(data.target.files[0])
-  }
- 
 
   const addAvatar = () =>{
-   
     dispatch(setAvatar())
     dispatch(updateAvatar(avaUploader))
     dispatch(setUserAvatarTh(avaFile,locId))

@@ -47,9 +47,7 @@ const ProfileInfo = (props) => {
   useEffect(()=>{
     setFol(fol.followed)
   },[fol.followed])
-  if (!props.profile){
-    return <Preloader/>
-  }
+ 
   const follow = () =>{
     if(!followed){
       dispatch(following(fol.id))
@@ -59,7 +57,9 @@ const ProfileInfo = (props) => {
     dispatch(setFollowed())
   }
 
- 
+  if (!props.profile){
+    return <Preloader/>
+  }
 
   return(
     <div className = {s.profInf} >
