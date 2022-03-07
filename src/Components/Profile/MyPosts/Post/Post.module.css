@@ -6,26 +6,29 @@
   margin-left: 10px;
   margin-bottom: 10px;
 }
+
 .item {
-  height: max(45vw,450px);
+  height: max(45vw, 450px);
   width: 100%;
   background-color: white;
   margin-bottom: 18px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.itemZag p{
+
+.itemZag p {
   margin-top: 25px;
   margin-left: 10px;
-  font-size: max(10px,min(18px,2vw));
+  font-size: max(10px, min(18px, 2vw));
   line-height: 21px;
 }
-.itemZag{
+
+.itemZag {
   padding-top: 5px;
   display: flex;
   border-bottom: 1px solid #000;
 }
 
-.imgBack{
+.imgBack {
   width: 40vw;
   height: calc(40vw * 0.7);
   margin-top: 36px;
@@ -47,7 +50,7 @@
 }
 
 
-.likeImg{
+.likeImg {
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -55,12 +58,13 @@
 }
 
 
-.avatar{
+.avatar {
   height: 50px;
   width: 50px;
-  
+
 }
-.likeContainer{
+
+.likeContainer {
   display: flex;
   margin-top: 10px;
   margin-left: 4.5%;
@@ -71,7 +75,8 @@
   line-height: 21px;
 
 }
-.bodyAlert{
+
+.bodyAlert {
   display: flex;
   position: fixed;
   left: 0;
@@ -83,40 +88,44 @@
   align-items: center;
 }
 
-.alertContainer{
+.alertContainer {
   height: 50%;
   width: 40%;
   background-color: azure;
 }
 
-.rectification{
+.rectification {
   text-align: center;
   font-size: 50px;
   color: #2E93B4;
 }
-.btnGroup{
+
+.btnGroup {
   justify-content: center;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
-.btnTrue{
+
+.btnTrue {
   height: 60px;
   width: 120px;
   background: #FDB5EB;
   border-radius: 8px;
-  color:white;
+  color: white;
   cursor: pointer;
   margin-right: 10px;
 }
-.btnFalse{
+
+.btnFalse {
   height: 60px;
   width: 120px;
   background: white;
   border-radius: 8px;
-  color:#FDB5EB;
+  color: #FDB5EB;
   cursor: pointer;
 }
+
 @media (max-width:700px) {
   .imgBack {
     width: 50vw;
@@ -132,7 +141,7 @@
     width: 100%;
     background-color: white;
     margin-bottom: 18px;
-    
+
   }
 
   .delPost {
@@ -158,6 +167,7 @@
   .likeContainer {
     font-size: 14px;
   }
+
   .likeImg {
     width: 20px;
     height: 20px;
@@ -167,7 +177,8 @@
     text-align: center;
     margin-left: 10px;
   }
-  .likeSvg{
+
+  .likeSvg {
     width: 15px;
     height: 15px;
   }

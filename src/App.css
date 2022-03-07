@@ -3,20 +3,24 @@
   width: 48vw;
   margin-left: 28vw;
 }
+
 @media (max-width:700px) {
-  .appWrapperContent{
+  .appWrapperContent {
     margin-top: 18vh;
     width: 70vw;
     margin-left: 15vw;
   }
 }
+
 .app-wrapper {
   display: flex;
 }
+
 :root {
   min-height: 100vh;
   background: linear-gradient(195.86deg, #020153 31.95%, #147392 76.94%, #2E93B4 87.04%);
 }
+
 .back {
   width: 5%;
   position: fixed;
@@ -26,7 +30,8 @@
   border: none;
   cursor: pointer;
 }
-.loginCont{
+
+.loginCont {
   min-height: 100vh;
   background: linear-gradient(195.86deg, #020153 31.95%, #147392 76.94%, #2E93B4 87.04%);
   width: 100%;
@@ -35,7 +40,8 @@
   position: relative;
   overflow: hidden;
 }
-.img1{
+
+.img1 {
   mix-blend-mode: overlay;
   position: absolute;
   width: 893px;
@@ -43,7 +49,8 @@
   left: 20px;
   top: -164px;
 }
-.img2{
+
+.img2 {
   position: absolute;
   width: 893px;
   height: 778px;
@@ -51,13 +58,14 @@
   right: 144px;
 }
 
-.borderLine{
+.borderLine {
   position: absolute;
   width: 84%;
   left: 8%;
   top: 7%;
 }
-.logoContainer{
+
+.logoContainer {
   font-family: Roboto;
   position: absolute;
   left: 18%;
@@ -75,6 +83,7 @@
   height: 60px;
   width: 55px;
 }
+
 .stopScroll {
   height: 100%;
   overflow: hidden;

@@ -3,6 +3,7 @@
   width: 71px;
   margin-top: 9px;
 }
+
 .helpImg {
   width: 24px;
   height: 24px;
@@ -12,7 +13,7 @@
 
 .link {
   height: 33px;
-  width: min(33px,6vw);
+  width: min(33px, 6vw);
   margin-right: 10px;
 }
 
@@ -24,6 +25,7 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-left: 28px;
 }
+
 .header {
   align-items: center;
   width: 100vw;
@@ -33,56 +35,63 @@
   background: linear-gradient(195.86deg, #020153 31.95%, #147392 76.94%, #2E93B4 87.04%);
   z-index: 2;
 }
-.headerFlex{
+
+.headerFlex {
   display: flex;
   align-items: center;
   height: 100%;
 }
-.lineHead{
+
+.lineHead {
   position: absolute;
   top: min(130px, max(18vh, 60px));
-  
+  width: 100vw;
 
 }
-.logo{
+
+.logo {
   font-family: Roboto;
   position: absolute;
   left: 10%;
   background: #FDB5EB;
   font-style: normal;
   font-weight: bold;
-  font-size: min(28px,8vh,5vw);
+  font-size: min(28px, 8vh, 5vw);
   line-height: 33px;
-  top: max(20%,30px);
+  top: min(20%, 30px);
   color: #FFFFFF;
   display: flex;
   align-items: center;
   letter-spacing: 3px;
   padding-left: 4px;
-  height: min(60px,14vw,10vh);
+  height: min(60px, 14vw, 10vh);
   min-height: 20px;
-  width: min(55px,12vw,12vh);
+  width: min(55px, 12vw, 12vh);
 }
-.loginBlock{
+
+.loginBlock {
   display: flex;
   margin-left: auto;
   margin-right: 5%;
   margin-top: auto;
   margin-bottom: auto;
 }
+
 .logTxt {
   color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 28px;
 }
-.myAva{
+
+.myAva {
   border-radius: 50%;
   height: min(33px, 6vw);
   width: min(33px, 6vw);
   margin-right: 10px;
 }
-.navToAva{
+
+.navToAva {
   height: 33px;
   display: flex;
   align-items: center;
